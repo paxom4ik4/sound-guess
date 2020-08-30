@@ -233,18 +233,20 @@ const Birds = [
 const Songs = [
   {
     name: "Arctic Monkeys",
-    ruName: "Арктические обезьяны",
+    ruName: "АМ",
     imgSrc: `${imgageSrc}songs/am.jpg`,
     audSrc: `${audioSrc}songs/am.mp3`,
-    desc: "This section needs no description. Just enjoy the music",
+    desc:
+      "British rock band formed in 2002 in High Green, a suburb of Sheffield.",
     id: 0,
   },
   {
     name: "Queen",
-    ruName: "Королева",
+    ruName: "Queen",
     imgSrc: `${imgageSrc}songs/bf.jpg`,
     audSrc: `${audioSrc}songs/bf.mp3`,
-    desc: "This section needs no description. Just enjoy the music",
+    desc:
+      "Queen is a British rock band that rose to prominence in the mid-1970s and is one of the most successful bands in the history of rock music. Mass media call the group cult and write that it still has hundreds of millions of fans.",
     id: 1,
   },
   {
@@ -252,7 +254,8 @@ const Songs = [
     ruName: "Radiohead",
     imgSrc: `${imgageSrc}songs/rc.jpg`,
     audSrc: `${audioSrc}songs/rc.mp3`,
-    desc: "This section needs no description. Just enjoy the music",
+    desc:
+      "Radiohead is a British rock band from Oxfordshire. The group was founded in 1985, and its composition has not changed since that time. Radiohead's style has traditionally been defined as alternative rock, although the sound has ranged from Brit-pop to art rock to electronic music at different stages.",
     id: 2,
   },
   {
@@ -260,7 +263,8 @@ const Songs = [
     ruName: "Битлз",
     imgSrc: `${imgageSrc}songs/tb-lb.jpg`,
     audSrc: `${audioSrc}songs/tb-lb.mp3`,
-    desc: "This section needs no description. Just enjoy the music",
+    desc:
+      "The Beatles are a British rock band from Liverpool, founded in 1960, which included John Lennon, Paul McCartney, George Harrison and Ringo Starr. Stuart Sutcliffe, Pete Best and Jimmy Nichol also performed at various times in the group.",
     id: 3,
   },
   {
@@ -268,7 +272,8 @@ const Songs = [
     ruName: "The Smiths",
     imgSrc: `${imgageSrc}songs/ts.jpg`,
     audSrc: `${audioSrc}songs/ts.mp3`,
-    desc: "This section needs no description. Just enjoy the music",
+    desc:
+      "The Smiths is a British rock band formed in Manchester, England in 1982 and subsequently critically acclaimed as one of Britain's most important alternative bands to emerge from the indie rock of the 1980s. Seven of the band's albums climbed to the top of the UK Indie Charts",
     id: 4,
   },
 ];

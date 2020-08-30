@@ -2,14 +2,22 @@ import React, { Component } from "react";
 import Restart from "../restart";
 import "./finish-game.css";
 export default class Finish extends Component {
+  winSound = () => {
+    const winSound = new Audio();
+    winSound.src = "../constants/win.mp3";
+    winSound.play();
+  };
   render() {
     const congrat = (
-      <div className="certificate-container">
-        <img
-          className="certificate-img"
-          src="../constants/certificate.png"
-          alt="picture"
-        />
+      <div>
+        <span onClick={this.winSound()}></span>
+        <div className="certificate-container">
+          <img
+            className="certificate-img"
+            src="../constants/certificate.png"
+            alt="picture"
+          />
+        </div>
       </div>
     );
     return (

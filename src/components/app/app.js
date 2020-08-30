@@ -16,6 +16,7 @@ import NextLevelButton from "../next-level-button";
 import Finish from "../finish-game";
 import Training from "../training-mode";
 import StartPage from "../start-page";
+import Spinner from "../spinner";
 
 export default class App extends Component {
   state = {
@@ -54,6 +55,7 @@ export default class App extends Component {
     wrong.src = "./constants/wrong.mp3";
     wrong.play();
   };
+
 
   setData = () => {
     switch (this.state.dataStage) {
