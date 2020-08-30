@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import {
   PublicTransport,
   Transport,
@@ -33,22 +34,33 @@ export default class Training extends Component {
       );
     });
     return (
-      <div>
-        <div className="jumbotron training">
-          <div className="training-close">
-            <span style={{ textAlign: "center" }}>
-              You can learn the items here!
-            </span>
+      <React.Fragment>
+        <div className="training" onClick={() => scroll.scrollToTop()}>
+          <Link
+            activeClass="active"
+            to="training"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          />
+          <div className="jumbotron training">
+            <div className="training-close">
+              <span style={{ textAlign: "center" }}>
+                You can learn the items here! <br />
+                Click on Container to slide up
+              </span>
+              <span className="close-item" onClick={() => this.props.onClose()}>
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
+            <ul className="list-group">{trainingItems}</ul>
             <span className="close-item" onClick={() => this.props.onClose()}>
-              <i class="fas fa-times"></i>
+              <button class="btn btn-primary">Return to Game Mode</button>
             </span>
           </div>
-          <ul className="list-group">{trainingItems}</ul>
-          <span className="close-item" onClick={() => this.props.onClose()}>
-            <button className="btn btn-primary">Return to Game Mode</button>
-          </span>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
