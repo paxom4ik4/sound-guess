@@ -16,7 +16,6 @@ import NextLevelButton from "../next-level-button";
 import Finish from "../finish-game";
 import Training from "../training-mode";
 import StartPage from "../start-page";
-import Spinner from "../spinner";
 
 export default class App extends Component {
   state = {
