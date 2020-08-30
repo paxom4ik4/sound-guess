@@ -45,7 +45,7 @@ export default class Training extends Component {
           </div>
           <ul className="list-group">{trainingItems}</ul>
           <span className="close-item" onClick={() => this.props.onClose()}>
-            <button class="btn btn-primary">Return to Game Mode</button>
+            <button className="btn btn-primary">Return to Game Mode</button>
           </span>
         </div>
       </div>
