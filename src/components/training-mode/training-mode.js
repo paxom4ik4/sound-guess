@@ -54,7 +54,7 @@ export default class Training extends Component {
                 <i class="fas fa-times"></i>
               </span>
             </div>
-            <ul className="list-group">{trainingItems}</ul>
+            <ul className="list-group training-list">{trainingItems}</ul>
             <span className="close-item" onClick={() => this.props.onClose()}>
               <button class="btn btn-primary">Return to Game Mode</button>
             </span>
