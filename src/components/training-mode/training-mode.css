@@ -24,7 +24,7 @@
   border-radius: 10px;
 }
 .training-list {
-  margin-top: 50px; 
+  margin-top: 50px !important; 
 }
 .training-img:hover {
   transition: 0.5s;
