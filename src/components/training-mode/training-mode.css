@@ -23,6 +23,9 @@
   max-height: 200px;
   border-radius: 10px;
 }
+.training-list {
+  margin-top: 50px; 
+}
 .training-img:hover {
   transition: 0.5s;
   transform: translateX(10px);
@@ -39,7 +42,6 @@
 .list-item {
   box-shadow: 0 0 3px 1px #ccc;
   margin-bottom: 10px;
-  max-height: 390px;
 }
 .training-close {
   position: absolute;
