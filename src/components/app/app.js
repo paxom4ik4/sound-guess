@@ -16,6 +16,8 @@ import NextLevelButton from "../next-level-button";
 import Finish from "../finish-game";
 import Training from "../training-mode";
 import StartPage from "../start-page";
+import Spinner from "../spinner";
+
 export default class App extends Component {
   state = {
     isStartPage: true,
@@ -53,7 +55,6 @@ export default class App extends Component {
     wrong.src = "./constants/wrong.mp3";
     wrong.play();
   };
-
 
   setData = () => {
     switch (this.state.dataStage) {
@@ -130,7 +131,6 @@ export default class App extends Component {
   };
 
   checkAnswer = (e) => {
-    e.persist();
     const target = e.target;
     const targetName = target.textContent;
     const targetId = target.getAttribute("id");
@@ -142,6 +142,8 @@ export default class App extends Component {
     if (targetName === this.state.currentQuestion.name) {
       target.className += " right";
       this.correctSound();
+      const elements = document.querySelectorAll("li");
+      elements.forEach((elem) => elem.classList.remove("dis"));
       this.setState((state) => {
         return {
           dataStage: state.dataStage + 1,
@@ -151,6 +153,7 @@ export default class App extends Component {
       });
     } else {
       this.wrongSound();
+      target.classList.add("dis");
       this.setState((state) => {
         return {
           maxScore: state.maxScore - 1,
