@@ -22,3 +22,6 @@
 .list-group-item.wrong {
   color: red;
 }
+.dis {
+  pointer-events: none;
+}
